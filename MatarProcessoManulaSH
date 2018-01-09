@@ -1,0 +1,4 @@
+#Matar processo
+read -p "Digite o nome do processo a ser encerrado: " comando
+fim=$(pgreg $comando)
+kill -9 $fim
