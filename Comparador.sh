@@ -5,4 +5,4 @@ read -p "Segundo arquivo: " arqui2
 #Comparacao
 diff $arqui1 $arqui2 | grep -iv 'Com' | grep -iv 'Bina'| grep -Ei "$arqui2" > saida.txt
 
-cat saida.txt
+cat saida.txt | more
