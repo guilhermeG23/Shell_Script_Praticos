@@ -1,2 +1,4 @@
 # Shell_Script_Praticos
-Shell scripts para facilitar ou testes pra me divertir
+
+* Teste de shells
+* Aprender e dar uma zueira no terminal
