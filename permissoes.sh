@@ -40,7 +40,10 @@ imprimir() {
 }
 
 ls -la | awk '{ print $1,$9 }' | sed '1d' > saida.txt
-while read linha; do 
-	imprimir $linha
+while read linha; do
+	compara=`echo $linha | awk '{ print $2 }'`
+	if [ $compara != 'saida.txt' ]; then
+		imprimir $linha
+	fi
 done < saida.txt
 rm -rf saida.txt
